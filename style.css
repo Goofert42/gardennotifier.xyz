@@ -131,10 +131,8 @@ body {
 }
 
 .btn-secondary:hover {
-    background: #f1f5f9;
+    background: #e2e8f0;
     color: #334155;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline {
