@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Notifier</title>
+    <meta name="description" content="Stay ahead in Grow a Garden with Garden Notifier — a Discord bot offering instant stock alerts, weather updates, and helpful utilities.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="logo-no-background.png" alt="Garden Notifier" class="logo">
+                <h1>Garden Notifier</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#commands">Commands</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1383147672374087710&permissions=8&scope=bot" class="btn btn-primary" target="_blank">Add to Server</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Grow Your Garden with <span class="highlight">Smart Notifications</span>
+            </h1>
+            <p class="hero-description">
+                Garden Notifier is the ultimate Discord bot for Grow a Garden players. Get real-time stock updates, weather notifications, and powerful utilities to enhance your gaming experience.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1383147672374087710&permissions=8&scope=bot" class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    Add to Discord
+                </a>
+                <a href="https://top.gg/bot/1383147672374087710" class="btn btn-secondary btn-large" target="_blank">
+                    <i class="fas fa-star"></i>
+                    Vote on Top.gg
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="logo-no-background.png" alt="Garden Notifier Bot Showcase">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Garden Notifier?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Notifications</h3>
+                    <p>Get instant alerts for stock updates including weather, seeds, gears, eggs, events, merchants, and cosmetics with optional role pinging.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Status Channel</h3>
+                    <p>Configure a voice channel as a dynamic weather status bar. See real-time weather updates like "☀️ Clear Skies" or "🌧️ Rain".</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock-rotate-left"></i>
+                    </div>
+                    <h3>Future Stock</h3>
+                    <p>View 100% acurate future stock for shop items using the bots /future-stock command.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i> 
+                    </div>
+                    <h3>Easy Setup</h3>
+                    <p>Get started in minutes with our simple setup process. Just run /config and follow the guided setup to enable notifications for your server.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Item Information</h3>
+                    <p>Access detailed information about any item in the game instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Plant Calculator</h3>
+                    <p>Calculate the exact price of your plants with our built-in calculator feature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">Bot Statistics</h2>
+            <p class="stats-timestamp">as of <span id="stats-timestamp">loading...</span></p>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-label">Servers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-label">Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-label">Notifications Sent</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" data-target="0">0</div>
+                    <div class="stat-label">Bot Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands">
+        <div class="container">
+            <h2 class="section-title">Bot Commands</h2>
+            <p class="commands-timestamp">as of <span id="commands-timestamp">loading...</span></p>
+            <div class="commands-grid">
+                <!-- Commands will be dynamically loaded here -->
+                <div class="command-loading">Loading commands...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="invite" class="cta">
+        <div class="container">
+            <h2>Ready to Enhance Your Garden?</h2>
+            <p>Join thousands of servers already using Garden Notifier to stay updated on everything Grow a Garden!</p>
+            <div class="cta-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1383147672374087710&permissions=8&scope=bot" class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    Add to Discord
+                </a>
+                <a href="https://top.gg/bot/1383147672374087710" class="btn btn-outline btn-large" target="_blank">
+                    <i class="fas fa-star"></i>
+                    Vote on Top.gg
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo-no-background.png" alt="Garden Notifier" class="footer-logo">
+                    <h3>Garden Notifier</h3>
+                    <p>The ultimate Discord bot for Grow a Garden players.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Links</h4>
+                        <a href="https://discord.com/oauth2/authorize?client_id=1383147672374087710&permissions=8&scope=bot" target="_blank">Add to Discord</a>
+                        <a href="https://top.gg/bot/1383147672374087710" target="_blank">Top.gg Page</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="mailto:goofert42@gmail.com">Contact Us</a>
+                        <a href="https://discord.gg/K6FArFC25k">Support Server</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Garden Notifier. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
