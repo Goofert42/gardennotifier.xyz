@@ -286,18 +286,8 @@ document.addEventListener('DOMContentLoaded', function() {
             try {
                 console.log('🔄 Fetching fresh bot stats...');
                 
-                // Fetch with timeout helper
-                const fetchWithTimeout = (url, timeout = 10000) => {
-                    return Promise.race([
-                        fetch(url),
-                        new Promise((_, reject) => 
-                            setTimeout(() => reject(new Error('Request timeout')), timeout)
-                        )
-                    ]);
-                };
-
                 // Fetch from stats endpoint only
-                const statsResponse = await fetchWithTimeout('https://api.gardennotifier.xyz/api/stats');
+                const statsResponse = await fetch('https://api.gardennotifier.xyz/api/stats');
 
                 if (!statsResponse.ok) {
                     throw new Error(`HTTP error! stats: ${statsResponse.status}`);
