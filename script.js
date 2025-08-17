@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 };
 
                 // Fetch from stats endpoint only
-                const statsResponse = await fetchWithTimeout('https:/api.gardennotifier.xyz/api/stats');
+                const statsResponse = await fetchWithTimeout('https://api.gardennotifier.xyz/api/stats');
 
                 if (!statsResponse.ok) {
                     throw new Error(`HTTP error! stats: ${statsResponse.status}`);
